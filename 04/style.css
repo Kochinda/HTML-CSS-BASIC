@@ -1,0 +1,106 @@
+.container{
+    width: 800px;
+    margin: 0 auto
+
+}
+
+.header{
+    position: relative;
+    background-color: red;
+    height: 100px;
+    width: 800px;
+}
+
+ul{
+    list-style: none; 
+    /* listの黒丸がなくなる */
+}
+
+.header-right{
+    /* position:absoluteを親要素に入れると子要素基準になる。 */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #fff;
+    margin: 0px;
+
+}
+/* リストの初めの要素にだけ適応するデザインの時 */
+.header-right li:first-child{
+    margin-left: 0;
+}
+
+/* 親要素についてる子要素に当てるデザインの指定方法２ 
+.header-right li{
+    height: 40px;
+    width: 52px;
+    background-color: #00ff00;
+    float: left;
+    */
+
+/* 親要素についてる子要素に当てるデザインの指定方法１ */
+/* .header-right > li{
+    height: 40px;
+    width: 52px;
+    background-color: #00ff00;
+    float: left;
+
+} */
+
+.header-right > li{
+    height: 40px;
+    width: 52px;
+    background-color: #00ff00;
+    float: left;
+    margin-left: 10px;
+}
+
+
+/* clearfixで黄色と青を浮かしたままサイドにきちんと並ぶようにするもの */
+.clearfix{
+    background-color: black;
+    height: 400px;
+}
+
+.footer{
+    background-color: green;
+    height: 100px;
+}
+
+.sidebar{
+    background-color: yellow;
+    width: 200px;
+    height: 400px;
+    float: left;
+}
+
+.sidebar-box li:last-child{
+    margin-bottom: 0;
+}
+.sidebar-box li{
+    height: 50px;
+    width: 100px;
+    background-color: #ff00ff;
+    margin-bottom: 50px;
+    position: relative;
+    margin-top: 50px;
+
+}
+/* li{
+    display: list-item;
+} */
+
+.main{
+    background-color: blue;
+    width: 600px;
+    height: 400px;
+    float: right;
+}
+
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+    
+}

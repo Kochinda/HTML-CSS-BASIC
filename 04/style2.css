@@ -1,0 +1,87 @@
+.container{
+    margin: 0 auto;
+    width: 800px;
+}
+
+.header{
+     /* 親要素としてのposition:relative;
+     これを基準に子要素は移動する */
+    position: relative;
+    background-color: red;
+    height: 100px;
+
+}
+
+.header-right{
+    background-color: white;
+    /* 子要素のposition:absolute; の後に
+    具体的な位置を指定する↓*/
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+}
+
+.header-right li{
+    height: 40px;
+    width: 40px;
+    background-color: aqua;
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+}
+
+.header-right li:first-child{
+    margin-left: 0;
+    /* 上でマージン10を指定しているので二重になっている
+    1個目のマージンを取るためにこれをする */
+}
+
+
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.sidebar{
+    background-color: yellow;
+    width: 200px;
+    height: 400px;
+    float: left;
+    position: relative;
+    /* 親要素としてのposition:relative;
+     これを基準に子要素は移動する */
+    
+}
+
+.sidebar-box li{
+    background-color: pink;
+    height: 50px;
+    width: 100px;
+    margin-bottom: 50px;
+}
+
+.sidebar-box{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.sidebar-box li:last-child{
+    margin: 0;
+}
+
+
+
+.main{
+    background-color: aquamarine;
+    width: 600px;
+    height: 400px;
+    float: right;
+}
+
+.footer{
+    background-color: green;
+    height: 100px;
+}

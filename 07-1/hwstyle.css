@@ -1,0 +1,73 @@
+.small-box{
+    /* これで全部の紫いろの四角のデザインを指定する */
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+}
+/* 画面四方の固定は、position:fixedの後に具体的に指定する */
+.fixed-top-left{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.fixed-top-right{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.fixed-bottom-left{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+.fixed-bottom-right{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    /* これで要素がトップの真ん中に移動した */
+    align-items: center;
+    /* これで画面の真ん中に移動した */
+    height: 100vh;
+}
+
+.center-box{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    position: relative;
+    /* これが子要素の基準になる */
+}
+
+.absolute-top-left{
+    position: absolute;
+    /* これで親要素基準にして、具体的な位置は↓で指定 */
+    top: 0;
+    left: 0;
+}
+
+.absolute-top-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.absolute-bottom-left{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.absolute-bottom-right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

@@ -1,0 +1,143 @@
+.sample1 {
+    /* グリッドコンテナの宣言 */
+    display: grid;
+    /* グリットアイテムのサイズ指定 */
+    grid-template: 
+    "header header" 50px
+    "side main" 100px
+    / 150px 1fr;
+    
+}
+
+.sample1 header {
+
+  background-color: aliceblue;
+  grid-area: header;
+  /* アイテムをどこに置くか指示*/
+}
+
+.sample1 aside {
+
+  background-color: plum;
+  /* アイテムをどこに置くか指示*/
+  grid-area: side;
+  
+}
+
+.sample1 main {
+
+  background-color: aqua;
+  /* アイテムをどこに置くか指示*/
+  grid-area: main;
+  
+}
+
+/* Problem 2 */
+
+.grid-container {
+  background-color: #F7B3F9;
+  padding: 10px;
+  grid-gap: 20px 50px;
+  /* グリッドコンテナの宣言 */
+  display: grid;
+  grid-template-rows: 50px 250px;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* 一段目のやつを指定する */
+.grid-item:first-child {
+  grid-row: 1;
+  grid-column: 1 / 4;
+
+
+}
+
+/* 二段目を指定する */
+.grid-item:nth-child(2) {
+  grid-row: 2;
+  grid-column: 1;  
+
+}
+
+/* 3段目を指定する */
+.grid-item:nth-child(3) {
+  grid-row: 2;
+  grid-column: 2 / 4;
+  
+
+}
+
+/* problem 3 */
+.sample3 {
+    /*  グリットコンテナの宣言*/
+    display: grid;
+
+  /* 高さと幅を指定*/
+  grid-template-rows: 100px;
+  grid-template-columns: repeat(6, 100px);
+
+  /* 真ん中にする時justify-contents:center */
+  justify-content: center;
+
+
+}
+
+.sample3 div {
+    /* ここで全部のデザイン指定する */
+  box-sizing: border-box;
+  background-color: #C9F4FF;
+  border: 1px solid #ddd;
+  margin: 3px;
+}
+
+/* problem 4 */
+.sample2 {
+    /* グリットコンテナの宣言 */
+    display: grid;
+
+    grid-template: 
+    "header header header" 60px
+    "nav main aside" 600px
+    "footer footer footer" 60px
+    / 20% 1fr 20%;
+
+    grid-gap: 20px;
+} 
+
+.mt5 {
+  margin-top: 50px;
+}
+
+.sample2 header {
+  background-color: #F7B3F9;
+  grid-area: header;
+}
+
+.sample2 nav {
+  background-color: #C9F4FF;
+  grid-area: nav;
+}
+
+.sample2 main {
+  background-color: #BAFCDE;
+  grid-area: main;
+}
+
+.sample2 aside {
+  background-color: #FDFFCC;
+  grid-area: aside;
+}
+
+.sample2 footer {
+  background-color: #FFDE99;
+  grid-area: footer;
+}

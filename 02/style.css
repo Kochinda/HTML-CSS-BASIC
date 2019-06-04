@@ -1,0 +1,40 @@
+.container{
+    width: 800px;
+    margin: 0 auto;
+    }
+
+
+.header{
+    background-color: red;
+    width: 800px;
+    height: 100px;
+}
+
+.sidebar{
+    background-color: yellow;
+    width: 200px;
+    height: 400px;
+    float: left;
+}
+
+.main{
+    background-color: blue;
+    width: 600px;
+    height: 400px;
+    float: right;
+
+}
+
+.footer{
+    background-color: green;
+    width: 800px;
+    height: 100px;
+    /* overflow: hidden; */
+    /* clear: bith; is one way to keep it stayed */
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+

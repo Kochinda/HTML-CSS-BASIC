@@ -1,0 +1,27 @@
+.bg1{
+    background: url(cat.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    /* 100vhは画面の高さ */
+}
+
+.main{
+    height: 100vh;
+    background-color: aqua;
+}
+
+.bg2{
+    background: url(dog.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.main2{
+    height: 100vh;
+    background-color: aqua;
+}
+

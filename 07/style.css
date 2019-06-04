@@ -1,0 +1,12 @@
+.bg{
+    background: url(img.jpg);
+    height: 1800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg div{
+    color: white;
+    font-size: 100px;
+}

@@ -1,0 +1,22 @@
+.container{
+    width: 800px;
+    margin: 0 auto;   
+}
+
+.header{
+    background-color: red;
+    width: 800px;
+    height: 200px;
+}
+
+.main{
+    background-color: blue;
+    width: 800px;
+    height: 200px;
+}
+
+.footer{
+    background-color:yellow;
+    width: 800px;
+    height: 200px;
+}

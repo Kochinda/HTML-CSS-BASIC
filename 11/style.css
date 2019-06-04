@@ -1,0 +1,113 @@
+body{
+    height: 100vh;
+    display: grid;
+
+    grid-template: 
+    "header header" 10%
+    "aside main" 1fr
+    "footer footer" 10%
+    / 20% 80%;
+
+        
+}
+
+header{
+    background-color: red;
+    grid-area: header;
+
+}
+
+aside{
+    background-color: aqua;
+    grid-area: aside;
+}
+
+main{
+    background-color: lightpink;
+    grid-area: main;
+
+    display: grid;
+    grid-template:
+    "main1 main2" 40%
+    "main3 main4" 40%
+    / 40% 40%;
+
+    grid-gap: 5%;
+
+    justify-content: center;
+    align-content: center;
+    /* 複数行のときaling-contentを使う */
+
+}
+
+main div{
+    background-color: white;
+}
+
+/* これで位置を指定する */
+main div:first-child {
+
+}
+
+main div:nth-child(2) {
+
+}
+
+main div:nth-child(3) {
+
+}
+
+main div:first-child {
+
+}
+
+
+
+footer{
+    background-color: purple;
+    grid-area: footer;
+}
+
+@media screen and (min-width:500px) and (max-width:700px) {
+    main{
+        grid-template: 
+        "main1" 20%
+        "main2" 20%
+        "main3" 20%
+        "main4" 20%
+        / 80%;
+
+        grid-gap: 5%;
+
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+@media screen and (max-width:500px) {
+    main{
+        grid-template:
+        "main1" 20%
+        "main2" 20%
+        "main3" 20%
+        "main4" 20%
+        / 80%;
+
+        grid-gap: 5%;
+        justify-content: center;
+        align-content: center;
+    }
+
+    body{
+        height: 200vh;
+        display: grid;
+        grid-template: 
+        "header" 10%
+        "main" 1fr
+        "aside" 20%
+        "footer" 10%
+        /* /auto; */
+        /100%;
+    }
+}
+

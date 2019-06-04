@@ -1,0 +1,84 @@
+.continer{
+    width: 800PX;
+    margin: 0 auto;
+}
+.header{
+    background-color: red;
+    width: 800px;
+    height: 100px;
+}
+
+.clearfix{
+    background-color: black;
+    width: 800px;
+    height: 400px;
+}
+
+
+.footer{
+    background-color: green;
+    width: 800px;
+    height: 100px;
+}
+
+.sidebar{
+    background-color: yellow;
+    height: 400px;
+    width: 200px;
+    float: left;
+    border: 10px black solid;
+    box-sizing: border-box;
+    /* コンテンツ全体の尺を自動で合わせてくれる */
+}
+
+.main{
+    background-color: blue;
+    height: 400px;
+    width: 600px;
+    float: right;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both
+}
+
+.top{
+    background-color: pink;
+    height: 300px;
+    /* width: 600px; */
+}
+
+.bottom{
+    background-color: brown;
+    height: 100px;
+    /* width: 600px; */
+}
+
+.left{
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+
+.right{
+    background-color: blueviolet;
+    width: 300px;
+    height: 300px;
+    float: right;
+}
+
+.hoge{
+    background-color: aliceblue;
+    height: 150px;
+}
+
+
+.fuga{
+    background-color: black;
+    height: 150px;
+}
+
+

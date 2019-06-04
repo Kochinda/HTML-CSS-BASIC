@@ -1,0 +1,35 @@
+body{
+    margin: 0 auto;
+    width: 800px;
+}
+
+.header{
+    background-color: red;
+    height: 100px;
+
+}
+
+.flex{
+    display: flex;
+    /* ↑これで子要素を横並びにする */
+}
+
+.sidebar{
+    background-color: yellow;
+    width: 200px;
+    height: 400px;
+
+}
+
+.main{
+    background-color: blue;
+    width: 600px;
+    height: 400px;
+}
+
+.footer{
+    background-color: green;
+    width: 800px;
+    height: 100px;
+
+}
